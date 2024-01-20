@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://wq10uq6j3rj0" path="res://UserInterface/Components/FitToWindow/FitToWindow.tscn" id="1_c5jg2"]
 [ext_resource type="Script" path="res://UserInterface/CharacterDialog/CharacterDialog.gd" id="1_slvrq"]
-[ext_resource type="Texture2D" uid="uid://dfqtmnfcnljqd" path="res://icon.svg" id="1_yvyf5"]
+[ext_resource type="Texture2D" uid="uid://c8adavgll733d" path="res://UserInterface/CharacterDialog/icon.svg" id="2_wmjii"]
 [ext_resource type="Theme" uid="uid://cyxn7d2u1yhdv" path="res://UserInterface/Themes/SmallButton/SmallButtonTheme.tres" id="4_mydrj"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_66e80"]
@@ -118,7 +118,7 @@ size_flags_vertical = 0
 
 [node name="TextureRect" type="TextureRect" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/CharacterHead"]
 layout_mode = 2
-texture = ExtResource("1_yvyf5")
+texture = ExtResource("2_wmjii")
 expand_mode = 5
 
 [node name="PanelContainer" type="PanelContainer" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
@@ -163,10 +163,10 @@ set_node = NodePath("..")
 fit_height = false
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-autoplay = "FadeIn"
 libraries = {
 "": SubResource("AnimationLibrary_h1gg2")
 }
+autoplay = "FadeIn"
 
 [connection signal="resized" from="." to="." method="_on_resized"]
 [connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
