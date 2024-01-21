@@ -18,7 +18,6 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-FMODRuntime="*res://addons/FMOD/runtime/fmod_runtime_manager.gd"
 Main="*res://AutoloadScripts/Main.gd"
 
 [display]
